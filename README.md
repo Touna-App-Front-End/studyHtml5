@@ -68,3 +68,9 @@ ps:
 
 ### 教程类
 
+
+## 学习路线
+![2015-12-11_1449814195438695731.jpg](http://p.simman.cc/2015-12-11_1449814195438695731.jpg)
+
+> 图片来自知乎答案 [链接](http://www.zhihu.com/question/30180100/answer/56554580?utm_campaign=webshare&amp;utm_source=weibo&amp;utm_medium=zhihu)
+
