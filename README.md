@@ -11,6 +11,40 @@ js    | 第四周 | 16-01-07
 demo  | 第六周 | 16-01-21
 	  | 第七周 | 16-01-28
 	  
+	  
+	  
+## 规范
+
+** 请每个人在对应的周目录下创建自己名字的文件夹用于存放代码文件 **
+
+ps:
+
+```
+.
+├── README.md
+├── Week01
+│   ├── README.md
+│   └── SimMan
+├── Week02
+│   ├── README.md
+│   └── SimMan
+├── Week03
+│   ├── README.md
+│   └── SimMan
+├── Week04
+│   ├── README.md
+│   └── SimMan
+├── Week05
+│   ├── README.md
+│   └── SimMan
+├── Week06
+│   ├── README.md
+│   └── SimMan
+└── Week07
+    ├── README.md
+    └── SimMan
+```
+	  
 
 ## 其他
 
