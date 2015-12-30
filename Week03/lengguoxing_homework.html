@@ -1,0 +1,527 @@
+<html>
+  <head>
+    <title>Laravel-简洁、优雅的PHP开发框架(PHP Web Framework)。- Laravel中文网（Laravel中国社区）</title>
+    <style type="text/css"> 
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        padding: 0px;
+        margin: 0px;
+      } 
+      
+      #top{
+        width: 100%;
+        height: 235px;
+        background-color: #F1726D;
+      }
+        
+      #top-text{
+        width: 100%;
+        height: 52px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 80px;
+        font-weight:bold;
+         
+      }
+      
+      
+      #top-version{
+        width: 100%;
+        height: 40px;
+      }
+      #top-version-innder{
+        width:770px;
+        height: 40px; 
+        margin:0 auto;
+        float:center;
+      }
+      .top-version-item{
+        height: 32px;
+        line-height:32px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 4px; 
+        float: left;         
+      }
+      
+      .top-version-item-link{
+        height: 32px;
+        border: 1px solid #F1726D;
+        text-align: center;
+        color: #ffffff;        
+        font-size: 16px;         
+        font-weight:bold;
+        text-decoration: none; 
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .top-version-item-link:hover{
+        height: 32px;
+        border: 1px solid #303030;
+        text-align: center;
+        color: #ffffff;        
+        font-size: 16px;         
+        font-weight:bold;
+        text-decoration: none; 
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #303030;
+      
+      }
+      #head{
+        width: 100%;
+        height: 58px;
+        background-color: #ffffff;
+      } 
+      #head-category{
+        width:930px;
+        height: 58px; 
+        margin:0 auto;
+        float:center;
+        background-color: #ffffff;
+      }
+      .head-category-item{
+        height: 58px;
+        line-height:58px;
+        margin-left: 2px;
+        margin-right: 2px;
+        float: left; 
+           
+      }
+      .head-category-item-link{
+        height: 58px;
+        
+        text-align: center;
+        color: #505050;        
+        font-size: 14px; 
+        text-decoration: none; 
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+         
+      }
+      
+      .head-category-item-link:hover{
+        height: 58px;
+        text-align: center;
+        color: #F1726D;        
+        font-size: 14px; 
+        text-decoration: none; 
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+         
+      
+      }
+      #head-category-item_index{
+        border-bottom: 2px solid #F1726D;
+      }
+      
+      #content{
+        width:100%;
+        height:1000px;      
+        margin: 0px;        
+        padding: 0px;
+        background-color: #eaeaea;         
+      }
+      #content-inner{         
+        width:65%;    
+        margin: 0px auto;
+        padding-left:0px;
+        padding-right:0px;
+        padding-bottom:40px;
+        padding-top:40px;
+        background-color: #eaeaea;
+        text-align:center;
+      }
+      
+      #content-left{
+        width:65%;
+        height:780px;      
+        margin: 0px;
+        padding: 0px;
+        margin-right:15px;
+        background-color: #ffffff;
+        float:left;
+        text-align:center;
+      }
+      #content-right{
+        width:30%;
+        height:600px;      
+        margin: 0px;
+        padding: 0px;
+        margin-left:15px;
+        margin-top:0px;
+        background-color: #ffffff;
+        float: left;
+      }
+      
+      .content-left_title{
+         width:100%;
+         height:50px;
+         align:center;
+         margin:0 auto;
+         padding-top: 30px;
+         text-align:center;
+      }
+      .content-left-title-link{   
+         color: #303030;        
+         font-size: 30px; 
+         text-decoration: none;           
+          
+      }
+      .content-left_anthor-time{
+         width:100%;
+         height:20px;
+         align:center;
+         margin:0 auto;
+         padding-top: 20px;
+         text-align:center;
+      }
+      .public-black-span{
+        font-size: 14px;
+        color:#949494;
+      }
+      .public-red-link{
+        font-size: 14px;
+        color:#F1726D;
+        text-decoration: none;    
+      }
+      .public-red-link:hover{
+        font-size: 14px;
+        color:#F1726D;
+        text-decoration: underline;    
+      }
+      .public-black-link{
+        font-size: 14px;
+        color:#303030;
+        text-decoration: none;    
+      }
+      .public-black-link:hover{
+        font-size: 14px;
+        color:#F1726D;
+        text-decoration: underline;    
+      }
+      .content-left-image{
+        margin-top:38px;
+        margin-bottom:20px;
+        margin-left:40px;
+        margin-right:40px;
+         
+      }
+      .content-left-image-img{
+        width:100%; 
+        max-height:400px;  
+      }
+        
+      .content-left-context{
+        margin-left:40px;
+        margin-right:40px;
+        margin-top:30px;
+        margin-bottom:30px; 
+        text-align:left;
+          
+      } 
+      .content-left-context p{   
+        font-size: 20px;
+        color:#4d4d4d;      
+        align:left;
+         
+      } 
+      
+      .content-left-read-more{
+         
+        margin-left:40px;
+        margin-right:40px;
+        margin-top:0px;
+        margin-bottom:0px;        
+        padding:0px;          
+        text-align:left;
+         
+      }
+      .content-left-read-more-link{
+        font-size: 16px;
+        color:#ffffff;      
+        align:center;
+        margin:0px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:10px;
+        padding-bottom:10px;
+        text-decoration: none; 
+        background-color:#F1726D;
+         
+      }
+      .content-left-read-more-link:hover{
+        font-size: 16px;
+        color:#ffffff;      
+        align:center;
+        margin:0px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:10px;
+        padding-bottom:10px;
+        text-decoration: none; 
+        background-color:#303030;
+         
+        
+      }
+      .content-left-line{         
+        border-top:1px solid #f2f3f2; 
+        margin-left:40px;
+        margin-right:40px;
+        margin-top:30px;
+      }
+      
+       .content-left-link-more{
+        height:100px;
+        margin-left:40px;
+        margin-right:40px;
+        margin-top:30px;
+        margin-bottom:0px;        
+        padding:0px;         
+        text-align:left;
+      }
+      .content-left-link-more-img{
+        width:16x;
+        height:16px; 
+      }
+      
+      #content-right-bbs{
+				height:150px;
+				margin:0px;
+				padding:0px;
+				background-color:#ffffff;
+				
+      }
+      .content-right-bbs-name{
+				height:30px;
+				text-align:left;
+      }
+      .public-content-right-title{
+				font-size: 22px;
+        color:#303030;      
+        padding-left:30px;
+				 
+				
+      }
+      .content-right-bbs-line{
+				height:1px;
+				padding-left:30px;
+				padding-right:30px;
+      }
+      .content-right-bbs-line-left{
+				width:30%;
+				border-top:1px solid #F1726D;
+				float:left;
+      }
+      .content-right-bbs-line-right{
+				width:60%;
+				border-top:1px solid #f2f3f2;
+				float:left;
+      }
+      
+      .content-right-bbs-qq{
+				height:30px;
+				text-align:left;
+				padding-left:30px;
+				padding-top:30px;
+      }
+      .content-right-bbs-question{
+				height:30px;
+				text-align:left;
+				padding-left:30px;
+				padding-top:10px;
+      }
+      
+      .content-right-blank{
+				height:40px;
+				background-color:#eaeaea;
+			}
+			      
+      #content-right-download{
+				height:110px;
+				margin-top:40px;
+				background-color:#ffffff;
+      }
+      
+      .content-right-download-btn{
+				height:40px;
+				margin-top:30px;
+				 
+      }
+      #content-right-flag{
+				height:300px;
+				background-color:#ffffff;
+      }
+      .content-right-flag-list{
+				margin-top:20px;
+				margin-left:30px;
+				margin-right:30px;
+				
+				background-color:#ff00ff;
+      }
+      .content-right-flag-list .content-left-read-more-link{
+				float:left;
+				margin-right:5px;
+				margin-top:5px;
+				padding:5px;
+				color:#303030;
+				background-color:#ffffff;
+				border:1px solid #dedede;
+      }
+      .content-right-flag-list .content-left-read-more-link:hover{
+				float:left;
+				margin-right:5px;
+				margin-top:5px;
+				padding:5px;
+				color:#ffffff;
+				background-color:#F1726D;
+				border:1px solid #dedede;
+      }
+       
+    </style>
+    </head>
+  
+  <body>
+    <div id="top">
+        <p id="top-text">为 WEB 艺术家创造的 PHP 框架。</p>
+        
+        <div id="top-version">
+          <div id="top-version-innder">
+            <div class="top-version-item"><a href="#" class="top-version-item-link">5.1 中文文档</a></div>
+            <div class="top-version-item"><a href="#" class="top-version-item-link">5.0 中文文档</a></div>
+            <div class="top-version-item"><a href="#" class="top-version-item-link">4.2 中文文档</a></div>
+            <div class="top-version-item"><a href="#" class="top-version-item-link">4.1 中文文档</a></div>
+            <div class="top-version-item"><a href="#" class="top-version-item-link">Lumen 中文文档</a></div>
+            <div class="top-version-item"><a href="#" class="top-version-item-link">回答社区</a></div>          
+          </div>
+        </div>
+       
+    </div>
+    <div id="head">
+        <div id="head-category">
+          <div class="head-category-item" id="head-category-item_index"><a href="#" class="head-category-item-link">首页</a></div>
+          <div class="head-category-item"><a href="#" class="head-category-item-link">Lumen</a></div>
+          <div class="head-category-item"><a href="#" class="head-category-item-link">问答社区</a></div>
+          <div class="head-category-item"><a href="#" class="head-category-item-link">中文文档</a></div>
+          <div class="head-category-item"><a href="#" class="head-category-item-link">下载离线文档</a></div>
+          <div class="head-category-item"><a href="#" class="head-category-item-link">API</a></div>          
+          <div class="head-category-item"><a href="#" class="head-category-item-link">PHP中文手册</a></div>          
+          <div class="head-category-item"><a href="#" class="head-category-item-link">Composer</a></div>          
+        </div>
+    </div>
+    <div id="content">
+        <div id="content-inner">
+        
+            <div id="content-left">
+                <div class="content-left_title">
+                    <a href="" class="content-left-title-link">Laravel 5.2 正式发布</a>
+                </div>
+                <div class="content-left_author-time">
+                    <span class="public-black-span">作者：</span>
+                    <a href="" class="public-red-link">王赛</a>
+                    <span class="public-black-span"> ·2015年12月22日</span>
+                </div>
+                <div class="content-left-image"> 
+                     <a href="#" ><img src="http://image.golaravel.com/0/68/484bcc40ed283d93c7b84273cdc38.png" class="content-left-image-img"/></a>
+                     
+                </div>
+                <div class="content-left-context"> 
+                     <p>Laravel 5.2 正式版刚刚发布了，前边我们已经发过一篇文章列举了新版本带来的新特性，有兴趣的同学可以再去看一下：Laravel 5.2 要发布了，来看看都有哪些新特性吧 。 话不多说，还是直接 composer install 并看文档吧！</p>
+                </div>                
+                <div class="content-left-read-more"> 
+                     <a href="#" class="content-left-read-more-link"/>阅读更多</a>
+                </div>
+                <hr class="content-left-line">
+                <div class="content-left-link-more">
+                     <img src="file.png" class="content-left-link-more-img"/> 
+                     <a href="" class="public-black-link">新版本发布</a>
+                     <span class="public-black-span">,</span>
+                     <a href="" class="public-black-link">Laravel 5.2</a>
+                </div>
+            </div>
+            
+            <div id="content-right">
+                <div id="content-right-bbs">
+                
+										 <div class="content-right-bbs-name">
+												<p class="public-content-right-title">社区</p>
+										 </div>
+										 <div class="content-right-bbs-line">
+											  <div class="content-right-bbs-line-left"></div>
+											  <div class="content-right-bbs-line-right"></div>
+										 </div>
+										 <div class="content-right-bbs-qq">
+											  <span class="public-black-span">QQ群：462694081</span>
+										 </div>
+										 <div class="content-right-bbs-question">
+											  <a href="" class="public-red-link">问答社区</a>
+										 </div>
+                </div>
+                <div class="content-right-blank"></div>
+                <div id="content-right-download">
+                
+										 <div class="content-right-bbs-name">
+												<p class="public-content-right-title">下载</p>
+										 </div>
+										 <div class="content-right-bbs-line">
+											  <div class="content-right-bbs-line-left"></div>
+											  <div class="content-right-bbs-line-right"></div>
+										 </div>
+										 <div class="content-right-download-btn">
+											  <a href="#" class="content-left-read-more-link"/>Laravel & Lumen 一键安装包下载</a>
+										 </div>										  
+                </div>
+                <div class="content-right-blank"></div>
+                <div id="content-right-flag">
+                
+										 <div class="content-right-bbs-name">
+												<p class="public-content-right-title">标签云</p>
+										 </div>
+										 <div class="content-right-bbs-line">
+											  <div class="content-right-bbs-line-left"></div>
+											  <div class="content-right-bbs-line-right"></div>
+										 </div>
+										 <div class="content-right-flag-list">
+											  <a href="#" class="content-left-read-more-link"/>Laravel 5.2</a>
+											  <a href="#" class="content-left-read-more-link"/>Spark</a>
+											  <a href="#" class="content-left-read-more-link"/>镜像</a>
+											  <a href="#" class="content-left-read-more-link"/>新版本发布</a>
+											  <a href="#" class="content-left-read-more-link"/>LTS</a>
+											  <a href="#" class="content-left-read-more-link"/>微框架</a>
+											  <a href="#" class="content-left-read-more-link"/>Lumen</a>
+											  
+											  <a href="#" class="content-left-read-more-link"/>命名空间</a>
+											  <a href="#" class="content-left-read-more-link"/>Laravel4</a>
+											  <a href="#" class="content-left-read-more-link"/>Whoops</a>
+											  <a href="#" class="content-left-read-more-link"/>Event</a>
+											  <a href="#" class="content-left-read-more-link"/>升级</a>
+											  <a href="#" class="content-left-read-more-link"/>laravle5</a>
+											  <a href="#" class="content-left-read-more-link"/>错误页</a>
+											  <a href="#" class="content-left-read-more-link"/>Laravel 5</a>
+											  <a href="#" class="content-left-read-more-link"/>Artisan</a>
+											  <a href="#" class="content-left-read-more-link"/>Laravel 5.1</a>
+											  <a href="#" class="content-left-read-more-link"/>Lravel</a>
+											  <a href="#" class="content-left-read-more-link"/>...</a>
+										 </div>	
+										 									  
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+  
+  </body>
+</html>
