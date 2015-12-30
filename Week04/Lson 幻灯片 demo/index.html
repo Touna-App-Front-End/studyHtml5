@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>幻灯片</title>
+</head>
+<body>
+
+<script>
+	var imageArray = new Array("1.png","2.png","3.png","4.png","5.png");
+	var index = 0;
+	<!--下一张图片-->
+	try{
+	function next(){
+		index ++ ;
+		if(index == imageArray.length)
+			index = 0;
+		document.getElementById("img1").src = imageArray[index];
+	}
+	<!--上一张图片-->
+	function previous(){
+		var image = document.getElementById("img1");
+		index -- ;
+		if(index < 0)
+			index = imageArray.length - 1;
+		image.src = imageArray[index];
+	}
+}
+catch(err)
+{
+alert(err);
+}
+</script>
+
+<img id = "img1" src="2.png" width="500" height="300">
+
+<p>
+<input type="button" value="previous" onclick ="previous()"></input>
+<input type="button" value="next" onclick = "next()"></input>
+<p>
+\*
+<p>1､添加过渡动画、自动切换；</p>
+<p>2､结合css定位，适配各种屏幕；</p>
+<p>3、根据接口返回，实现首页轮播图</p>
+*\
+</body>
+</html>
