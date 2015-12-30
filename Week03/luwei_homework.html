@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>鲁伟的作业</title>
+		<style type="text/css">
+		    body{background-color: #eeeeee;}
+		    /*顶部标题*/
+			div.title{background-color: #ff6633;color: #ffffff;text-align: center;padding: 2%;padding-bottom: 1%;margin: 0px}
+			p.title{font-size: 45px}
+			div.button{margin-top: 2.5%;}
+			div.button button{border-style: solid;border-color: #ff0000;padding: 5px;color: #ffffff;background-color: #ff6633}
+			div.button button:hover{background-color: #333333}
+			div.button button:active{background-color: #333333}
+			/*导航栏*/
+			div.navigation{background-color: #ffffff; text-align: center;padding: 1%;}
+			div.navigation a{margin: 0.5%}
+			div.navigation a:link {text-decoration:none; color: #333333}
+			div.navigation a:visited {text-decoration:underline;color: #333333}
+			div.navigation a:hover {text-decoration:none;color: #ff3333}
+			div.navigation a:active {text-decoration:none;color: #ff3333}
+			/*中间内容*/
+			div.content{background-color: #eeeeee; padding-top: 2%;}
+			/*右侧类容*/
+			div.content-right{width: 20%;float: right;margin-right: 19%}
+			/*左侧内容*/
+			div.content-left{text-align: center; width: 40%;;margin-left: 19%}
+			/*左侧内容第一块*/
+			div.content-left-01{background-color: #ffffff;padding: 5%;padding-bottom: 10%}
+			img.img{width: 100%;}
+			p.version_des{text-align: left;font-size: 20px;color: #444444;line-height: 27px}
+			
+			div.content-left-01 h2{color: #444444}
+			div.content-left-01 h5{color: #777777}
+			div.content-left-01 h5 a:link{color: #ff7777;text-decoration:none;}
+			div.content-left-01 h5 a:visited{color: #ff7777;text-decoration:none;}
+			div.content-left-01 h5 a:hover{color: #ff7777;text-decoration:underline;}
+			div.content-left-01 h5 a:active{color: #ff7777;text-decoration:underline;}
+			div.content-left-01 hr{margin-top: 4%;}
+			
+			div.content-left-01 button{border-style: solid;border-color: #ff6633;float: left;padding: 5px;color: #ffffff;background-color: #ff6633;}
+			div.content-left-01 button:hover{background-color: #ef5623}
+			div.content-left-01 button:active{background-color: #2f5623}
+			div.new-version{float: left;margin-top: 1%;margin-bottom: 3%}
+			div.new-version a{color: #666666;font-size: 16px;font-family: Times;margin-right: 10px}
+			/*a#a-left{margin-left: 10px}*/
+			div.new-version a:link{color: #666666;text-decoration:none;}
+			div.new-version a:visited{color: #666666;text-decoration:none;}
+			div.new-version a:hover{color: #ff7777;text-decoration:underline;}
+			div.new-version a:active{color: #ff7777;text-decoration:underline;}
+			
+			/*社区*/
+			div.communite{background:#ffffff;height:20%;padding-left: 30px;padding-right: 30px;padding-top: 5px;padding-bottom: 15px}
+			div.communite p{font-size: 15px;margin-top: 10px; margin-left: 5px;color: #555555}
+			div.communite p a:link{color: #ff7777;text-decoration:none;}
+			div.communite p a:visited{color: #ff7777;text-decoration:none;}
+			div.communite p a:hover{color: #ff7777;text-decoration:underline;}
+			div.communite p a:active{color: #ff7777;text-decoration:underline;}
+			/*下载*/
+			div.download{background:#ffffff;height:30%;margin-top: 40px;padding-left: 30px;padding-right: 30px;padding-top: 5px;padding-bottom: 15px}
+			div.download h3{margin-top: 10px; margin-left: 5px}
+			div.download a{padding-left: 10px;padding-top: 5px;padding-right: 10px; padding-bottom: 5px;background-color: #ff5555;color: #ffffff;margin-top: 30px}
+			div.download a:link{background-color: #ff5555;text-decoration:none;}
+			div.download a:visited{background-color: #ff5555;text-decoration:none;}
+			div.download a:hover{background-color: #555555;text-decoration:none;}
+			div.download a:active{background-color: #555555;text-decoration:none;}
+			/*标签*/
+			div.lables{background:#ffffff;height:60%;margin-top: 40px;padding-left: 30px;padding-right: 30px;padding-top: 5px;padding-bottom: 15px;}
+		
+			div.lables button{border-style: solid;border-color: #999999;border-width:1px;padding-left:10px; padding-top:5px;padding-right:10px;padding-bottom:5px;color: #888888;background-color: #ffffff;margin-top: 10px; margin-left: 5px}
+			div.lables button:hover{background-color: #ff5555;color: #ffffff}
+			div.lables button:active{background-color: #ff5555;color: #ffffff}
+			div.next-page{text-align: center;margin-top: 40px}
+			div.next-page a{background-color: #ff5555;color: #ffffff;margin-right: 10px;padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px}
+			div.next-page a:link{text-decoration:none;}
+			div.next-page a:visited{text-decoration:none;}
+			div.next-page a:hover{text-decoration:none;}
+			div.next-page a:active{text-decoration:none;}
+			/*底部*/
+			div.footer{background-color: #444444;width:100%;margin-top: 2%;padding: 10px}
+			div.footer h3{color: #ffffff}
+			div.footer p{color:#999999;}
+			div.footer a:link{color: #bbbbbb;text-decoration:none;}
+			div.footer a:visited{color: #bbbbbb;text-decoration:none;}
+			div.footer a:hover{color: #ff7777;text-decoration:none;}
+			div.footer a:active{color: #ff7777;text-decoration:none;}
+			div.footer-right{background-color: #444444;width: 18%;float: right;margin-right: 18%;}
+			div.footer-center{background-color: #444444;width: 18%;float: right;margin-left: 5%;margin-right: 5%}
+			div.footer-center button{border-style: solid;border-color: #999999;border-width:1px;padding-left:10px; padding-top:5px;padding-right:10px;padding-bottom:5px;color: #888888;background-color: #dddddd;margin-top: 10px; margin-left: 5px}
+			div.footer-center button:hover{background-color: #dd5555;color: #ffffff}
+			div.footer-center button:active{background-color: #dd5555;color: #ffffff}
+			div.footer-left{background-color: #444444;width:18%;margin-left: 10%;margin-left: 18%}
+			div.footer-center button{margin-top: 10px; margin-left: 5px}
+			
+			/*最下面的底部*/
+			div.bottom{background-color: #222222;height: 10%;color: #ffffff;padding: 20px;text-align: center;}
+		</style>
+	</head>
+
+	<body>
+		<div class="title">
+			<p class="title"><b>为 WEB 艺术家创造的 PHP 框架。</b></p>
+			<div class="button">
+				<button type="button">5.1中文文档</button>
+				<button type="button">5.0中文文档</button>
+				<button type="button">4.2中文文档</button>
+				<button type="button">4.1中文文档</button>
+				<button type="button">Lumen中文文档</button>
+				<button type="button">问答社区</button>
+			</div>	
+		</div>
+		<div class="navigation">
+			<a href="http://www.golaravel.com/">首页</a>
+			<a href="http://www.golaravel.com/">Lumen</a>
+			<a href="http://www.golaravel.com/">问答社区</a>
+			<a href="http://www.golaravel.com/">中文文档</a>
+			<a href="http://www.golaravel.com/">下载离线文档</a>
+			<a href="http://www.golaravel.com/">API</a>
+			<a href="http://www.golaravel.com/">PHP中文手册</a>
+			<a href="http://www.golaravel.com/">Composer</a>
+		</div>
+
+		<div class="content">
+			<div  class="content-right">
+				<div class="communite">
+					<h3>社区</h3><hr>
+					<p>QQ群：462694081</p>
+					<p><a href="http://wenda.golaravel.com/">问答社区</a></p>
+				</div>
+
+				<div class="download">
+					<h3>下载</h3><hr>
+					<a href="http://www.golaravel.com/download/">Laravel & Lumen 一键安装包下载</a>
+				</div>
+
+				<div class="lables">
+					<h3>标签云</h3><hr>
+					<button>标签01</button><button>标签01</button><button>标签01</button><br>
+					<button>标签01</button><button>标签01</button><button>标签01</button><br>
+					<button>标签01</button><button>标签01</button><button>标签01</button><br>
+					<button>标签01</button><button>标签01</button><button>标签01</button><br>
+					<button>标签01</button><button>标签01</button><button>标签01</button><br>
+					<button>标签01</button><button>标签01</button><button>标签01</button>
+				</div>
+			</div>
+
+			<div class="content-left">
+				<div class="content-left-01">
+					<h2>Laravel 5.2 正式发布</h1>
+					<h5>作者：<a href="http://www.golaravel.com/author/wangsai/">王赛</a> • 2015年12月22日</h5>
+					<img class="img" src="http://image.golaravel.com/0/68/484bcc40ed283d93c7b84273cdc38.png" alt="我们都是小青蛙，呱呱呱呱呱">
+					<p class="version_des">Laravel 5.2 正式版刚刚发布了，前边我们已经发过一篇文章列举了新版本带来的新特性，有兴趣的同学可以再去看一下：Laravel 5.2 要发布了，来看看都有哪些新特性吧 。 话不多说，还是直接 composer install 并看文档吧！</p>
+					<button>阅读全文</button><br>
+					<hr>
+					<div class="new-version">
+						<a href="https://www.baidu.com/">新版本发布</a>
+						<a href="https://www.baidu.com/" id="a-left">Laravel 5.2 </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="next-page">
+			<a >第1页/共5页</a>
+			<a href="http://www.golaravel.com/page/2/" id="next-page">下一页</a>
+
+		</div>
+
+		<div class="footer">
+			<div class="footer-right">
+				<h3>合作伙伴</h3>
+				<hr style="height:1px;border:none;border-top:1px solid #888888;"/>
+				<a href="http://www.bootcss.com/">Bootstrap中文网</a>
+				<a href="http://www.bootcdn.cn/">开放CDN服务</a><br>
+				<a href="http://www.gruntjs.net/">Grunt中文网</a>
+				<hr style="height:1px;border:none;border-top:1px dashed #888888;padding-bottom:10px"/>
+				<a href="https://www.upyun.com/zh/index.html">又拍云</a>
+				<a href="https://www.ucloud.cn/">UCloud</a>
+			</div>
+
+			<div class="footer-center">
+				<h3>标签云</h3>
+				<hr style="height:1px;border:none;border-top:1px solid #888888;"/>
+				<button>标签01</button><button>标签01</button><button>标签01</button><br>
+				<button>标签01</button><button>标签01</button><button>标签01</button><br>
+				<button>标签01</button><button>标签01</button><button>标签01</button><br>
+				<button>标签01</button><button>标签01</button><button>标签01</button><br>
+				<button>标签01</button><button>标签01</button><button>标签01</button><br>
+				<button>标签01</button><button>标签01</button><button>标签01</button>
+			</div>
+
+			<div class="footer-left">
+				
+				<h3>最新文章</h3>
+				<hr style="height:1px;border:none;border-top:1px solid #888888;"/>
+				<a href="http://www.golaravel.com/post/laravel-5-2-zheng-shi-fa-bu/">Laravel 5.2 正式发布</a>
+				<p>2015年12月22日</p>
+				<hr style="height:1px;border:none;border-top:1px dashed #888888;padding-bottom:10px"/>
+
+				<h3>最新文章</h3>
+				<hr style="height:1px;border:none;border-top:1px solid #888888;"/>
+				<a href="http://www.golaravel.com/post/laravel-5-2-zheng-shi-fa-bu/">Laravel 5.2 正式发布</a>
+				<p>2015年12月22日</p>
+				<hr style="height:1px;border:none;border-top:1px dashed #888888;padding-bottom:10px"/>
+
+				<h3>最新文章</h3>
+				<hr style="height:1px;border:none;border-top:1px solid #888888;"/>
+				<a href="http://www.golaravel.com/post/laravel-5-2-zheng-shi-fa-bu/">Laravel 5.2 正式发布</a>
+				<p>2015年12月22日</p>
+				<hr style="height:1px;border:none;border-top:1px dashed #888888;padding-bottom:10px"/>
+			</div>
+
+			
+
+			
+		</div>
+
+		<div class="bottom">
+			<p>Copyright © Laravel 中文网 | 京ICP备11008151号 | 京公网安备11010802014853</p>
+		</div>
+		
+	</body>
+</html>
